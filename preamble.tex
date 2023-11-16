@@ -1,0 +1,29 @@
+% Standard Package
+\usepackage[margin=25mm]{geometry}
+\usepackage[numbers]{natbib}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\pagenumbering{gobble}
+\usepackage{verbatim}
+\immediate\write18{texcount -tex -sum  \jobname.tex > \jobname.wordcount.tex}
+
+% Keywords command
+\providecommand{\keywords}[1]
+{
+  \small	
+  \textbf{\textit{Keywords---}} #1
+}
+
+% \title{Out of Wind Tunnel Differential Pressure Performance of 3D Printed GATOR Morphing Aircraft Skins: An Experimental and FEA Study}
+\title{Differential Pressure Analysis Of 3D Printed GATOR Morphing Skins: An FEA And Novel Experimental Approach}
+\author{Rafael Martin Heeb$^{1}$, Benjamin King Sutton Woods$^{1}$  \\
+        \small $^{1}$University of Bristol\\
+        \small Department of Aerospace Engineering\\
+        \small Queens Building\\
+        \small Bristol\\
+        \small BS8 1TR\\
+        \small United Kingdom \\
+}
+\date{\today} % Comment this line to show today's date
